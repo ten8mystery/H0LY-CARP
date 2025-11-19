@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holy Carp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">Holy Carp</div>
+        <div class="tabs">
+            <div class="tab" onclick="switchTab('home')">Home</div>
+            <div class="tab" onclick="switchTab('games')">Games</div>
+            <div class="tab" onclick="switchTab('apps')">Apps</div>
+            <div class="tab" onclick="switchTab('proxy')">Proxy</div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content" id="home">
+        <div class="welcome">
+            <h1>Welcome to Holy Carp</h1>
+            <button onclick="startGaming()">Start Gaming</button>
+        </div>
+    </div>
+
+    <div class="content" id="games" style="display:none;">
+        <h2>Games Section</h2>
+        <p>List of games...</p>
+    </div>
+
+    <div class="content" id="apps" style="display:none;">
+        <h2>Apps Section</h2>
+        <p>List of apps...</p>
+    </div>
+
+    <div class="content" id="proxy" style="display:none;">
+        <h2>Proxy Section</h2>
+        <p>Proxy setup instructions...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
